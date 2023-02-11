@@ -12,10 +12,6 @@ func updateTime(clock *widget.Label) {
 	clock.SetText(formatted)
 }
 
-func getSecondOfDay(t time.Time) int {
-    return 60*60*t.Hour() + 60*t.Minute() + t.Second()
-}
-
 func main() {
 	a := app.New()
 	w := a.NewWindow("Display Time")
